@@ -37,6 +37,9 @@ public class Hotel {
         }
         return habsAuxiliar;
     }
+    public ArrayList<Habitacion> getHabitacionesPiso(int numPiso){
+        return this.pisos[numPiso].getHabitaciones();
+    }
     public Habitacion getHabitacion(int numHabitacion){ //numero de tres digitos. Ej: 202, 305.
         return this.pisos[numHabitacion/100].getHabitaciones()[numHabitacion%100];
     }
